@@ -1,0 +1,15 @@
+name: Test Marketplace Action
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run my action
+        uses: Youngjo0411/collabops-marketplace-test@v1
+        with:
+          message: "Hello from marketplace action"
+          repeat: "2"
